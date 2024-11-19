@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bu sayfa, HTML etiketleri hakkında örnekler içermektedir.">
+    <meta name="keywords" content="HTML, etiketler, örnek, eğitim, web geliştirme">
+    <meta name="author" content="Ertuğrul Özcan">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>HTML Etiketleri Örneği</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }
+        aside {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px ;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width:100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Etiketleri Örneği</h1>
+        <p>HTML ile yapısal ve görsel öğeler</p>
+    </header>
+
+    <nav>
+        <a href="#hakkinda">Hakkında</a>
+        <a href="#icerik">İçerik</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <main>
+        <section id="hakkinda">
+            <h2>Hakkında</h2>
+            <p>Bu sayfa, HTML etiketlerinin nasıl kullanılacağını göstermek için hazırlanmıştır.</p>
+        </section>
+
+        <section id="basliklar">
+            <h2>Metin Etiketleri</h2>
+            <h2>Aşağıda, h1 ile h6 etiketlerinin görünüm farklarını görebilirsiniz:</h2>
+            
+            <h1>Bu bir H1 başlığıdır</h1>
+            <h2>Bu bir H2 başlığıdır</h2>
+            <h3>Bu bir H3 başlığıdır</h3>
+            <h4>Bu bir H4 başlığıdır</h4>
+            <h5>Bu bir H5 başlığıdır</h5>
+            <h6>Bu bir H6 başlığıdır</h6>
+
+            <h3>1. Span Kullanımı:</h3>
+            <p>
+                Bu bir paragraf içinde <span style="color: red; font-weight: bold;">özel olarak vurgulanan</span> bir metindir.
+            </p>
+        
+            <h3>2. Pre Kullanımı:</h3>
+            <p>
+                Aşağıda bir kod bloğu, önceden biçimlendirilmiş bir şekilde gösterilmektedir:
+            </p>
+            <pre>
+                function selamVer() {
+                    console.log("Merhaba, Dünya!");
+                }
+            </pre>
+
+        </section>
+
+        <section id="listeler">
+            <h2>Liste Etiketleri</h2>
+        
+            <h3>1. Sıralı Liste (&lt;ol&gt;):</h3>
+            <p>HTML öğrenirken takip edilecek adımlar:</p>
+            <ol>
+                <li>HTML etiketlerini öğrenin.</li>
+                <li>Sayfa yapısını oluşturun.</li>
+                <li>Stil ve tasarım ekleyin (CSS).</li>
+                <li>Dinamik içerik ekleyin (JavaScript).</li>
+            </ol>
+        
+            <h3>2. Tanım Listesi (&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;):</h3>
+            <p>HTML terimleri ve açıklamaları:</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language'in kısaltmasıdır ve web sayfalarını oluşturmak için kullanılır.</dd>
+                <dt>CSS</dt>
+                <dd>Web sayfalarına stil eklemek için kullanılan bir tasarım dilidir.</dd>
+                <dt>JavaScript</dt>
+                <dd>Web sayfalarını dinamik hale getiren bir programlama dilidir.</dd>
+            </dl>
+        </section>
+
+        <section id="baglantilar">
+            <h2>Bağlantı Etiketleri</h2>
+        
+            <h3>1. Harici Kaynak Bağlantısı (&lt;link&gt;):</h3>
+            <p>Aşağıda sayfamıza bir CSS dosyasını bağlayan `<link>` etiketi örneği bulunmaktadır:</p>
+            <pre>
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            </pre>
+            <p>Bu sayede harici bir CSS dosyasından stiller ekleyebilirsiniz.</p>
+        
+            <h3>2. İçerik Bağlantısı (&lt;a&gt;):</h3>
+            <p>Aşağıdaki bağlantıları kullanarak diğer kaynaklara veya sayfa içindeki bir bölüme gidebilirsiniz:</p>
+            <ul>
+                <li><a href="https://www.google.com" target="_blank">Google'ı ziyaret edin</a></li>
+                <li><a href="#hakkinda">Hakkında bölümüne git</a></li>
+                <li><a href="mailto:info@example.com">Bize e-posta gönder</a></li>
+            </ul>
+        </section>
+
+        <article id="icerik">
+            <h2>Örnek İçerik</h2>
+            <p>HTML ile metin, resim, tablo ve form gibi öğeleri kolayca oluşturabilirsiniz.</p>
+            <blockquote>"HTML öğrenmek çok eğlenceli ve faydalıdır!"</blockquote>
+        </article>
+
+        <aside>
+            <h3>Öneriler</h3>
+            <ul>
+                <li>HTML etiketlerini tanıyın.</li>
+                <li>CSS ile görsel tasarımlar yapın.</li>
+                <li>JavaScript ile dinamik özellikler ekleyin.</li>
+            </ul>
+        </aside>
+
+        <section id="tablo">
+            <h2>Örnek Tablo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Etiket</th>
+                        <th>Açıklama</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>Başlık etiketleri</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Resim ekleme etiketi</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Alt bilgi bölümü</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Bu tablo HTML temel etiketlerini açıklamaktadır.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="medya">
+            <h2>Medya Etiketleri</h2>
+        
+            <!-- Resim Eklemek için <img> -->
+            <h3>1. Resim Etiketi (&lt;img&gt;)</h3>
+            <p>Aşağıda bir resim gösterilmektedir:</p>
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Örnek Resim" width="300">
+        
+            <!-- Ses Dosyası Eklemek için <audio> -->
+            <h3>2. Ses Etiketi (&lt;audio&gt;)</h3>
+            <p>Aşağıda bir ses dosyasını oynatmak için <code>&lt;audio&gt;</code> etiketi kullanılmaktadır:</p>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                Tarayıcınız audio etiketini desteklemiyor.
+            </audio>
+        
+            <!-- Video Dosyası Eklemek için <video> -->
+            <h3>3. Video Etiketi (&lt;video&gt;)</h3>
+            <p>Aşağıda bir video dosyası gösterilmektedir:</p>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="İngilizce Altyazı">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        
+            <!-- Farklı Formatlarda Medya Kaynağı için <source> -->
+            <h3>4. <code>&lt;source&gt;</code> Etiketi</h3>
+            <p>Farklı formatlardaki medya dosyalarını desteklemek için <code>&lt;source&gt;</code> etiketi kullanılır:</p>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.ogg" type="video/ogg">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </section>
+
+        <section id="form-ornek">
+            <h2>Form Etiketleri</h2>
+        
+            <p>Aşağıda, farklı türlerde veri girişleri içeren bir form örneği bulunmaktadır. Bu formda e-posta, telefon numarası, tarih, renk seçimi gibi farklı türdeki giriş alanları yer alır.</p>
+        
+            <!-- Form Başlangıcı -->
+            <form action="/submit" method="post">
+                
+                <!-- Kullanıcı Adı -->
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" name="username" required placeholder="Kullanıcı adınızı girin">
+                <br><br>
+        
+                <!-- E-posta -->
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required placeholder="E-posta adresinizi girin">
+                <br><br>
+        
+                <!-- URL -->
+                <label for="url">Web Sitesi:</label>
+                <input type="url" id="url" name="url" placeholder="Web sitenizi girin">
+                <br><br>
+        
+                <!-- Telefon Numarası -->
+                <label for="phone">Telefon Numarası:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefon numaranızı girin">
+                <br><br>
+        
+                <!-- Sayı -->
+                <label for="quantity">Miktar:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+                <br><br>
+        
+                <!-- Aralık -->
+                <label for="range">Aralık Seçimi:</label>
+                <input type="range" id="range" name="range" min="0" max="100" step="1" value="50">
+                <br><br>
+        
+                <!-- Tarih -->
+                <label for="date">Doğum Tarihi:</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+        
+                <!-- Renk Seçimi -->
+                <label for="color">Renk Seçin:</label>
+                <input type="color" id="color" name="color" value="#ff0000">
+                <br><br>
+        
+                <!-- Cinsiyet Seçimi -->
+                <label for="gender">Cinsiyet:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                    <option value="other">Diğer</option>
+                </select>
+                <br><br>
+        
+                <!-- Öneriler -->
+                <label for="fruit">Favori Meyveniz:</label>
+                <datalist id="fruit">
+                    <option value="Elma">
+                    <option value="Armut">
+                    <option value="Muz">
+                    <option value="Portakal">
+                    <option value="Kiraz">
+                </datalist>
+                <input type="text" id="fruit" name="fruit" list="fruit" placeholder="Favori meyvenizi seçin">
+                <br><br>
+        
+                <!-- Mesaj -->
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required placeholder="Mesajınızı buraya yazın"></textarea>
+                <br><br>
+        
+                <!-- İlerleme Çubuğu -->
+                <label for="progress">İlerleme Durumu:</label>
+                <progress id="progress" value="70" max="100">70%</progress>
+                <br><br>
+        
+                <!-- Ölçüm -->
+                <label for="measurement">Ölçüm:</label>
+                <meter id="measurement" value="0.6" min="0" max="1">60%</meter>
+                <br><br>
+        
+                <!-- Gönder Butonu -->
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+        
+
+        <section id="mark-time">
+            <h2>Mark ve Time Etiketleri</h2>
+        
+            <!-- <mark> Etiketi Kullanımı -->
+            <h3>1. <code>&lt;mark&gt;</code> Etiketi</h3>
+            <p>Web geliştirme, HTML ve CSS öğrenmenin <mark>önemli</mark> olduğu bir süreçtir. Öğrenme sürecinde <mark>pratik</mark> yapmanın faydası büyüktür.</p>
+        
+            <!-- <time> Etiketi Kullanımı -->
+            <h3>2. <code>&lt;time&gt;</code> Etiketi</h3>
+            <p>Bu yazı, <time datetime="2024-11-19">19 Kasım 2024</time> tarihinde yayımlandı. Günümüz tarihi ise <time datetime="2024-11-19T15:30">19 Kasım 2024, 15:30</time>.</p>
+        
+            <p><time datetime="2024-12-31">Yılbaşı gecesi</time>, herkes için özel bir zamandır.</p>
+        </section>
+
+        <section id="canvas-svg">
+            <h2>Canvas ve SVG Etiketleri</h2>
+        
+            <!-- <canvas> Etiketi Kullanımı -->
+            <h3>1. <code>&lt;canvas&gt;</code> Etiketi ile Grafik Çizimi</h3>
+            <canvas id="myCanvas" width="300" height="200" style="border:1px solid #000000;">
+                Tarayıcınız canvas desteklemiyor.
+            </canvas>
+        
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var ctx = canvas.getContext("2d");
+        
+                // Basit bir dikdörtgen çizelim
+                ctx.fillStyle = "#FF0000"; // Kırmızı renk
+                ctx.fillRect(50, 50, 200, 100); // Dikdörtgenin koordinatları ve boyutları
+            </script>
+        
+            <!-- <svg> Etiketi Kullanımı -->
+            <h3>2. <code>&lt;svg&gt;</code> Etiketi ile Vektör Grafik Çizimi</h3>
+            <svg width="400" height="300">
+                <!-- Bir daire çizelim -->
+                <circle cx="150" cy="100" r="80" stroke="black" stroke-width="3" fill="yellow" />
+                <!-- Bir dikdörtgen çizelim -->
+                <rect x="50" y="50" width="200" height="100" stroke="black" stroke-width="2" fill="green" />
+            </svg>
+        
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Öğreniyorum | Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
