@@ -1,3 +1,3 @@
 # HTML-etiketleri
 
-![GIF açıklaması](C:\Users\Ertugrul\Desktop\HTML-etiketleri\html.mp4)
+![Site Görünümü](C:\Users\Ertugrul\Desktop\HTML-etiketleri\html.gif)
