@@ -1,4 +1,5 @@
 # HTML-etiketleri
 
-![Site Görünümü](./HTML-etiketleri/html.gif)
+![Site Görünümü](./path/to/HTML-etiketleri/html.gif)
+
 
