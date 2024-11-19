@@ -1,5 +1,5 @@
 # HTML-etiketleri
 
-[[./path/to/HTML-etiketleri/html.gif](https://github.com/ozcanertugrul/HTML-etiketleri/issues/1#issue-2672709636)](https://github.com/ozcanertugrul/HTML-etiketleri/issues/1#issue-2672709636)
+![1119_2_](https://github.com/user-attachments/assets/99c89858-2c51-4bc1-8561-be00ccbcbb63)
 
 
